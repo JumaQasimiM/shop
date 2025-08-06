@@ -151,7 +151,24 @@ p {
     transform: translateY(-5px);
 }
 
+.count-icon{
+    position: relative;
 
+}
+
+.count {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    background: #ff523b;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 20px;
+    text-align: center;
+}
 
 .logo {
     font-size: 25px;
