@@ -82,6 +82,8 @@ p {
     transform: translateX(-50%)
 }
 
+
+
 /* header */
 .header {
     background: linear-gradient(#fff, #ffd6d6);
@@ -127,8 +129,8 @@ p {
 }
 
 .menu-item li a:hover {
-        transition: all 0.5s ease;
-        color: var(--main-color);
+    transition: all 0.5s ease;
+    color: var(--main-color);
 }
 
 .menu-item li a::before {
@@ -142,16 +144,17 @@ p {
     background-color: var(--main-color);
     transition: all 0.5s ease;
 }
+
 .menu-item li a:hover::before {
     width: 100%;
 }
 
-.bx-shopping-bag:hover{
+.bx-shopping-bag:hover {
     cursor: pointer;
     transform: translateY(-5px);
 }
 
-.count-icon{
+.count-icon {
     position: relative;
 
 }
@@ -389,6 +392,49 @@ h4 {
     color: red;
 }
 
+/* icon color */
+
+.paypal {
+    color: darkblue;
+    cursor: pointer;
+
+}
+
+.visa {
+    color: blue;
+    cursor: pointer;
+}
+
+.mastercard {
+    color: rgb(191, 65, 65);
+    cursor: pointer;
+}
+
+.credit-card {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.money {
+    color: rgba(146, 140, 140, 0.614);
+    cursor: pointer;
+}
+
+:where(.paypal, .visa, .mastercard, .credit-card, .money):hover {
+    /* transform: translateY(-5px); */
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.payment:hover i:not(:hover) {
+    opacity: 0.8;
+}
+
+.payment i:hover {
+    opacity: 1;
+    filter: brightness(1.4);
+}
+
 /* footer */
 
 .footer {
@@ -460,9 +506,7 @@ h4 {
         margin-left: 50px;
         margin-right: 10px;
         margin-bottom: 10px;
-
     }
-
     nav ul li {
         color: var(--white-color);
     }
@@ -473,18 +517,13 @@ h4 {
         /* height: 300px; */
     }
 }
-
 @media screen and (max-width: 600px) {
     .row {
         text-align: center;
     }
-
     .col-2,
     .col-3,
     .col-4 {
         flex-basis: 100%;
-
     }
-
-
 }
